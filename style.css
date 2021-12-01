@@ -3,7 +3,9 @@
 * { margin: 0px; padding: 0px; box-sizing: border-box; font-family: Raleway, sans-serif;text-decoration: none; }
 
 
-main { width: 1200px; margin: auto; }
+main { 
+    width: 1200px; 
+    margin: auto; }
 
 
 .titulo {
@@ -103,16 +105,32 @@ a:hover {
 
 
 @media screen and (max-width:600px) {
+    
     main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;}
+        width: 100%;  
+    }
+    
+    .titulo{
+    width: 100%;
+    height: auto;
+        }
 
-    section {width: 100%;
+    h1 {font-size: 1.875em;}
+
+    section, .row {
+        width: 100%;
         display: flex;
         flex-direction: column;
-    text-align: center;}
-    .hide {display: none;}
+
+    }
+    span{
+        font-size: 2em;}
+    .contacto a, li {font-size: 0.7em;}
+
+    .image  {margin: auto;}
+    .hide {
+        display: none;
+    }
 
 }
 
